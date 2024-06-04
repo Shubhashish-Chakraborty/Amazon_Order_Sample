@@ -1,12 +1,13 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path , include
 from . import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path("" , views.home , name="main_home")
+    path("" , views.home , name="main_home"),
 
+    path("books/" , include("books.urls") , name="books")
 
 ]
