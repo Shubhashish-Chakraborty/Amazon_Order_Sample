@@ -48,3 +48,10 @@ body {
 .navbar-right a {
     margin-left: 20px;
 }
+
+.navbar a:hover {
+
+    color: gray;
+
+
+}
