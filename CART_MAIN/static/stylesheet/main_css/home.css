@@ -8,15 +8,21 @@
 
 body {
     background-color: #e6e2ff;
+    
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px; /* Increase padding for larger navbar */
+    padding: 20px 40px;
     background-color: #333;
-    font-size: 1.2em; /* Increase font size for navbar links */
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Apply blur to the navbar background */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
 }
 
 .navbar-left,
@@ -32,13 +38,13 @@ body {
 }
 
 .navbar i {
-    font-size: 2em; /* Increase the size of the icons */
+    font-size: 2em;
 }
 
 .navbar-left a {
-    margin-right: 20px; /* Add spacing between left-aligned items */
+    margin-right: 20px;
 }
 
 .navbar-right a {
-    margin-left: 20px; /* Add spacing between right-aligned items */
+    margin-left: 20px;
 }
