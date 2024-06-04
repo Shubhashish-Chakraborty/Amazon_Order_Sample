@@ -11,11 +11,20 @@
 
 
 body {
-    background-color: #14131A;
+    background-color: #e6e2ff;
 }
 
 .navbar {
 
     color: azure;
 
+}
+
+.navbar i {
+
+    color: black;
+}
+
+.navbar a {
+    text-decoration: none;
 }
