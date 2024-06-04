@@ -1,30 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Reddit+Mono:wght@200..900&family=Rubik+Iso&family=Seaweed+Script&family=Stick&family=Tauri&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
-
 * {
     font-family: "Work Sans", sans-serif;
     margin: 0;
     padding: 0;
 }
 
-
 body {
     background-color: #e6e2ff;
 }
 
 .navbar {
-
-    color: azure;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Increase padding for larger navbar */
+    background-color: #333;
+    font-size: 1.2em; /* Increase font size for navbar links */
 }
 
-.navbar i {
-
-    color: black;
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
 }
 
 .navbar a {
     text-decoration: none;
+    color: azure;
+    margin: 0 10px;
+}
+
+.navbar i {
+    font-size: 2em; /* Increase the size of the icons */
+}
+
+.navbar-left a {
+    margin-right: 20px; /* Add spacing between left-aligned items */
+}
+
+.navbar-right a {
+    margin-left: 20px; /* Add spacing between right-aligned items */
 }
