@@ -8,7 +8,53 @@
 
 body {
     background-color: #e6e2ff;
-    
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Reduced padding for a smaller top bar */
+    background-color: #333;
+}
+
+.shop-now-div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px; /* Reduced padding for a smaller capsule */
+    border: 2px solid azure;
+    border-radius: 25px;
+    color: azure;
+    font-size: 1.5em; /* Reduced font size */
+
+    cursor: pointer;
+}
+
+.shop-now-div:hover {
+    box-shadow: 0px 0px 40px 5px rgb(37, 177, 208);
+
+    color: rgb(0, 180, 126);
+
+    transition: 0.5s;
+}
+
+.shop-now-div h1 {
+    margin: 0;
+    font-size: 1.2em; /* Smaller font size for "SHOP NOW" text */
+}
+
+.social-links-div {
+    display: flex;
+    align-items: center;
+}
+
+.social-links-div a {
+    text-decoration: none;
+    color: azure;
+    margin: 0 10px;
+    font-size: 1.5em; /* Increased the size of the icons */
 }
 
 .navbar {
@@ -25,12 +71,6 @@ body {
     -webkit-backdrop-filter: blur(10px); /* Safari support */
 }
 
-.navbar-left,
-.navbar-right {
-    display: flex;
-    align-items: center;
-}
-
 .navbar a {
     text-decoration: none;
     color: azure;
@@ -41,17 +81,22 @@ body {
     font-size: 2em;
 }
 
-.navbar-left a {
-    margin-right: 20px;
-}
-
-.navbar-right a {
-    margin-left: 20px;
-}
-
 .navbar a:hover {
-
     color: gray;
+    transition: 0.6s;
+}
 
+.banner-div {
+    width: 100%;
+    overflow: hidden;
+}
 
+.banner-img-div {
+    width: 100%;
+}
+
+.banner-img-div img {
+    width: 100%;
+    height: auto;
+    display: block;
 }

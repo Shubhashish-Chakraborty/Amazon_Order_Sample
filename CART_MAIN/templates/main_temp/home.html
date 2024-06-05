@@ -11,62 +11,56 @@
 </head>
 <body>
     
+    <div class="top-bar">
+        <div class="shop-now-div">
+            <h1>SHOP NOW</h1>
+        </div>
+
+        <div class="social-links-div">
+            <a href="https://github.com/Shubhashish-Chakraborty/Cart-Project-Django" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/shubhashish-chakraborty" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://twitter.com/__Shubhashish__" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.instagram.com/___shubhashish___/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </div>
 
     <div class="navbar">
-
         <a href="{% url "main_home" %}">
-
             <i class="fa-solid fa-cart-shopping"></i>
-            
         </a>
-
 
         <a href="{% url "books_home" %}">
-
-            Books            
-
+            Books
         </a>
-
 
         <a href="{% url "gadgets_home" %}">
-
-            Gadgets            
-
+            Gadgets
         </a>
 
-
         <a href="{% url "bottles_home" %}">
-
             Bottles
-
         </a>
 
         <a href="{% url "wallets_home" %}">
-
             Wallets
-
         </a>
-        
-
-
-
     </div>
 
     <div class="banner-div">
-
         <div class="banner-img-div">
-
-
-            <img src="{% static "assets/home/Banner_Phones.jpg" %}" alt="">            
-
-
+            <img src="{% static "assets/home/Banner_Phones.jpg" %}" alt="">
         </div>
-
-
     </div>
-    
-
-
-
 </body>
 </html>
