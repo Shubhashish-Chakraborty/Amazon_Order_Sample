@@ -18,6 +18,8 @@ body {
     background-color: #333;
 }
 
+
+
 .shop-now-div {
     flex-grow: 1;
     display: flex;
@@ -55,6 +57,12 @@ body {
     color: azure;
     margin: 0 10px;
     font-size: 1.5em; /* Increased the size of the icons */
+}
+
+.social-links-div i:hover {
+
+    color: rgb(0, 91, 161);
+    transition: 0.3s;
 }
 
 .navbar {

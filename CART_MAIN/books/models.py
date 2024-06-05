@@ -20,4 +20,4 @@ class Order_Book(models.Model):
     Order_Placed = models.DateTimeField(default=timezone.now)
 
 
-    Select_Book_and_Place_Order = models.CharField(max_length=2 , choices=Books_Available , default="B7")
+    Select_Book = models.CharField(max_length=2 , choices=Books_Available , default="B7")
