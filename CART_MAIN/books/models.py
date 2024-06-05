@@ -17,7 +17,25 @@ class Order_Book(models.Model):
 
     ]
 
+    Qauntity_Available = [
+
+        ("01" , "1"),
+        ("02" , "2"),
+        ("03" , "3"),
+        ("04" , "4"),
+        ("05" , "5"),
+        ("06" , "6"),
+        ("07" , "7"),
+        ("08" , "8"),
+
+
+    ]
+
     Order_Placed = models.DateTimeField(default=timezone.now)
 
 
     Select_Book = models.CharField(max_length=2 , choices=Books_Available , default="B7")
+    Select_Quantity= models.CharField(max_length=2 , choices=Qauntity_Available , default="01")
+
+    def __str__(self):
+        return self.Select_Book
