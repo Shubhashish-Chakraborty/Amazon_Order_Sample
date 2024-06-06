@@ -40,8 +40,7 @@ body {
 
 .order-cards-main {
     display: flex;
-    flex-wrap: nowrap; /* Make sure cards are in a single row */
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
     padding: 20px;
     border: 2px solid #333; /* Add border to main div */
     border-radius: 10px; /* Optional: add rounded corners */
@@ -59,7 +58,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-shrink: 0; /* Prevent shrinking when wrapping */
     transition: transform 0.3s ease-in-out; /* Smooth transition for the animation */
 }
 
