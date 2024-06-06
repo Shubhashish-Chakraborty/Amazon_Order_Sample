@@ -7,73 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Books</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="{% static "stylesheet/books_css/book.css" %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/books_css/book.css' %}">
 </head>
 <body>
-    
-
     <div class="navbar">
-
-        <a href="{% url "main_home" %}">
-
+        <a href="{% url 'main_home' %}">
             <i class="fa-solid fa-cart-shopping"></i>
-            
         </a>
-
-
-        <a href="{% url "books_home" %}">
-
-            Books            
-
-        </a>
-
-
-        <a href="{% url "gadgets_home" %}">
-
-            Gadgets            
-
-        </a>
-
-
-        <a href="{% url "bottles_home" %}">
-
-            Bottles
-
-        </a>
-
-        <a href="{% url "wallets_home" %}">
-
-            Wallets
-
-        </a>
-        
-
-
-
+        <a href="{% url 'books_home' %}">Books</a>
+        <a href="{% url 'gadgets_home' %}">Gadgets</a>
+        <a href="{% url 'bottles_home' %}">Bottles</a>
+        <a href="{% url 'wallets_home' %}">Wallets</a>
     </div>
 
     <div class="order-cards-main">
-
         {% for BOOK in BOOKS %}
-        
             <div class="order-card">
-
-                <img src="{{BOOK.Confirm_book.url}}" alt="404">
-
-                <h4>
-                    Quantity : {{BOOK.Select_Quantity}}
-                </h4>
-
-                
-
-
+                <img src="{{ BOOK.Confirm_book.url }}" alt="404">
+                <div class="order-card-details">
+                    <h4>{{ BOOK.Select_Book }}</h4>
+                    <p>Quantity: {{ BOOK.Select_Quantity }}</p>
+                    <p>Price: {{ BOOK.Select_Price }}</p>
+                </div>
             </div>
-
-        
         {% endfor %}
-
     </div>
-    
-
 </body>
 </html>
