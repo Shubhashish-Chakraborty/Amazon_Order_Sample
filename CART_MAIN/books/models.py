@@ -38,7 +38,7 @@ class Order_Book(models.Model):
     Select_Quantity= models.CharField(max_length=2 , choices=Qauntity_Available , default="01")
 
 
-    Confrim_book = models.ImageField(upload_to="book_imgs/" , default="") 
+    Confirm_book = models.ImageField(upload_to="book_imgs/" , default="") 
 
     def __str__(self):
         return self.Select_Book

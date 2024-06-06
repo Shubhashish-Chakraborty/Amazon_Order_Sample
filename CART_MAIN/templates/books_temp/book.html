@@ -52,6 +52,27 @@
 
     </div>
 
+    <div class="order-cards-main">
+
+        {% for BOOK in BOOKS %}
+        
+            <div class="order-card">
+
+                <img src="{{BOOK.Confirm_book.url}}" alt="404">
+
+                <h4>
+                    Quantity : {{BOOK.Select_Quantity}}
+                </h4>
+
+                
+
+
+            </div>
+
+        
+        {% endfor %}
+
+    </div>
     
 
 </body>
