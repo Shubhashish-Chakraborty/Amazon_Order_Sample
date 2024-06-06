@@ -31,12 +31,22 @@ class Order_Book(models.Model):
 
     ]
 
+    Price_Variant = [
+
+        ("$35" , "$35"),
+        ("$48" , "$48"),
+        ("$56" , "$56"),
+        ("$89" , "$89"),
+
+
+    ]
+
     Order_Placed = models.DateTimeField(default=timezone.now)
 
 
     Select_Book = models.CharField(max_length=2 , choices=Books_Available , default="B7")
     Select_Quantity= models.CharField(max_length=2 , choices=Qauntity_Available , default="01")
-
+    Select_Price = models.CharField(max_length=3 , choices=Price_Variant , default="$48")
 
     Confirm_book = models.ImageField(upload_to="book_imgs/" , default="") 
 
