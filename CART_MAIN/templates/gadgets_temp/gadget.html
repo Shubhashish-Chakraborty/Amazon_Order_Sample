@@ -7,52 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Gadgets</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="{% static "stylesheet/gadgets_css/gadget.css" %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/gadgets_css/gadget.css' %}">
 </head>
 <body>
-    
-
     <div class="navbar">
-
-        <a href="{% url "main_home" %}">
-
+        <a href="{% url 'main_home' %}">
             <i class="fa-solid fa-cart-shopping"></i>
-            
         </a>
-
-
-        <a href="{% url "books_home" %}">
-
-            Books            
-
-        </a>
-
-
-        <a href="{% url "gadgets_home" %}">
-
-            Gadgets            
-
-        </a>
-
-
-        <a href="{% url "bottles_home" %}">
-
-            Bottles
-
-        </a>
-
-        <a href="{% url "wallets_home" %}">
-
-            Wallets
-
-        </a>
-        
-
-
-
+        <a href="{% url 'books_home' %}">Books</a>
+        <a href="{% url 'gadgets_home' %}">Gadgets</a>
+        <a href="{% url 'bottles_home' %}">Bottles</a>
+        <a href="{% url 'wallets_home' %}">Wallets</a>
     </div>
 
-    
-
+    <div class="order-cards-main">
+        {% for GADGET in GADGETS %}
+            <div class="order-card">
+                <img src="{{ GADGET.Confirm_Gadget.url }}" alt="404">
+                <div class="order-card-details">
+                    <h4>{{ GADGET.Select_Gadget }}</h4>
+                    <p>Quantity: {{ GADGET.Select_Quantity }}</p>
+                    <p>Price: {{ GADGET.Select_Price }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
