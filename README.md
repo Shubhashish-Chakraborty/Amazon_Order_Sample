@@ -4,14 +4,21 @@
 
 ___**Clone This Repository:**___ <br>
 
-`https://github.com/Shubhashish-Chakraborty/Amazon_Order_Sample.git`
+```
+https://github.com/Shubhashish-Chakraborty/Amazon_Order_Sample.git
+```
 
 <hr>
 
 **Create/Setup the Virtual Environment :** <br>
 
-`>>> pip install uv` <br>
-`>>> uv venv`
+```
+pip install uv
+```
+
+```
+uv venv
+```
 
 <hr>
 
@@ -19,15 +26,19 @@ ___**Clone This Repository:**___ <br>
 
 | System          | Command                     |
 | --------------- | --------------------------- |
-| On macOS and Linux | `source .venv/bin/activate` |
-| On Windows      | `.venv\Scripts\activate`    |
+| macOS and Linux | `source .venv/bin/activate` |
+| Windows      | `.venv\Scripts\activate`    |
 
 <hr>
 
 **Install Django and other Packages:** <br>
 
-`>>> uv pip install django` <br>
-`>>> uv pip install Pillow`
+``` 
+uv pip install django
+```
+``` 
+uv pip install Pillow
+```
 
 <hr>
 
@@ -39,12 +50,18 @@ ___**Clone This Repository:**___ <br>
 
 **Make Migrations:** <br>
 
-`>>> python manage.py migrate`
+```
+python manage.py migrate
+```
 
 **Create Superuser:** <br>
 
-> Give all the neccesary inputs <br>
-`>>> python manage.py createsuperuser`
+
+```
+python manage.py createsuperuser
+```
+
+> Give all the neccesary inputs
 
 ## RUN THE SERVER
 
