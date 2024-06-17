@@ -5,7 +5,7 @@
 ___**Clone This Repository:**___ <br>
 
 ```
-https://github.com/Shubhashish-Chakraborty/Amazon_Order_Sample.git
+git clone https://github.com/Shubhashish-Chakraborty/Amazon_Order_Sample.git
 ```
 
 <hr>
