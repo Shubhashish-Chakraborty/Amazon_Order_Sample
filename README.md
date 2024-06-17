@@ -31,13 +31,12 @@ uv venv
 
 <hr>
 
-**Install Django and other Packages:** <br>
+**Install Required Packages:** <br>
 
-``` 
-uv pip install django
 ```
-``` 
-uv pip install Pillow
+
+uv pip install -r requirements.txt
+
 ```
 
 <hr>
